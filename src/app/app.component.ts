@@ -2,7 +2,12 @@ import { Component, VERSION } from '@angular/core';
 
 @Component({
   selector: 'my-app',
-  templateUrl: './app.component.html',
+  template: `
+    <hello name="{{ name }}"></hello>
+    <p>
+      Start editing to see some magic happen :)
+    </p>
+  `,
   styleUrls: [ './app.component.css' ]
 })
 export class AppComponent  {
