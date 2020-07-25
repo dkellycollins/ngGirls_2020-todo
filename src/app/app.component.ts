@@ -4,22 +4,16 @@ import { TodoItem } from './interfaces/todo-item';
 @Component({
   selector: 'my-app',
   template: `
-    <hello name="{{ name }}"></hello>
-    <p>
-      Start editing to see some magic happen :)
-    </p>
+    <h1>
+      Welcome to {{ title }}!
+    </h1>
 
-    <app-input-button-unit (submit)="addItem($event)"></app-input-button-unit>
-    <ul>
-      <li *ngFor="let todoItem of todoList">
-        <app-todo-item [item]="todoItem"></app-todo-item>
-      </li>
-    </ul>
+    <app-list-manager></app-list-manager>
   `,
   styleUrls: [ './app.component.css' ]
 })
 export class AppComponent  {
-  name = 'Angular ' + VERSION.major;
+  title = 'Angular ' + VERSION.major;
   todoList: TodoItem[] = [
     {title: 'install NodeJS'},
     {title: 'install Angular CLI'},
