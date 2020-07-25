@@ -7,6 +7,8 @@ import { Component, VERSION } from '@angular/core';
     <p>
       Start editing to see some magic happen :)
     </p>
+
+    <app-input-button-unit></app-input-button-unit>
   `,
   styleUrls: [ './app.component.css' ]
 })
